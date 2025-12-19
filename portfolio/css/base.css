@@ -1,0 +1,82 @@
+/* base.css: Core styles, color palette, resets */
+:root {
+  --color-bg: #181c20;
+  --color-bg-alt: #23272b;
+  --color-text: #f4f6fa;
+  --color-text-light: #cfd8e3;
+  --color-accent: #00b4d8;
+  --color-accent-hover: #0096c7;
+  --color-card: #23272b;
+  --color-shadow: rgba(0,0,0,0.18);
+  --navbar-height: 60px;
+  --border-radius: 12px;
+  --transition: 0.2s cubic-bezier(.4,0,.2,1);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover, a:focus {
+  color: var(--color-accent-hover);
+}
+.btn {
+  display: inline-block;
+  padding: 0.75em 2em;
+  border-radius: var(--border-radius);
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+  box-shadow: 0 2px 8px var(--color-shadow);
+  margin-right: 1em;
+}
+.btn:last-child { margin-right: 0; }
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+.btn--accent:hover, .btn--accent:focus {
+  background: var(--color-accent-hover);
+}
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+  text-align: center;
+}
+main {
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .page-title {
+    font-size: 1.5rem;
+  }
+}

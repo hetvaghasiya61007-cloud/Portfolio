@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Portfolio</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__brand">Portfolio</div>
+    <ul class="navbar__links" id="navbarLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="navbar__toggle" id="navbarToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navbarLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <main class="contact">
+    <h1 class="page-title">Contact</h1>
+    <section class="contact__section">
+      <form class="contact__form" autocomplete="off">
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form__group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--accent">Send</button>
+      </form>
+      <div class="contact__info">
+        <p>Email: <span class="contact__email">your@email.com</span></p>
+        <p>LinkedIn: <span class="contact__linkedin">linkedin.com/in/yourprofile</span></p>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

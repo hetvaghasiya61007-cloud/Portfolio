@@ -1,0 +1,45 @@
+/* animations.css: Page load, micro-interactions, subtle depth */
+/* --- Smooth Page Load & Micro-interactions --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeInUp 0.8s cubic-bezier(.4,0,.2,1) forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.btn, .navbar__links li a, .projects__card, .contact__form button, .chip, .tag, .whatido__card, .about__card {
+  transition: box-shadow var(--transition), transform var(--transition), background var(--transition), color var(--transition), border var(--transition);
+}
+.btn:hover, .btn:focus {
+  transform: translateY(-2px) scale(1.045);
+  box-shadow: 0 4px 16px var(--color-shadow);
+}
+.projects__card:hover, .projects__card:focus,
+.whatido__card:hover, .about__card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 32px var(--color-shadow);
+}
+.chip:hover, .tag:hover {
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: 0 4px 16px var(--color-shadow);
+}
+.navbar__links li a.active::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  margin-top: 6px;
+  animation: underlineIn 0.3s cubic-bezier(.4,0,.2,1) forwards;
+}
+@keyframes underlineIn {
+  from { width: 0; }
+  to { width: 60%; }
+}

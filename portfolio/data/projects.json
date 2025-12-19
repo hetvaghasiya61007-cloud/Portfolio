@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Sales Dashboard (Power BI)",
+    "problem": "Visualize and analyze sales data to identify trends and insights.",
+    "tools": "Power BI, Excel",
+    "learnings": "Data modeling, DAX basics, dashboard design, storytelling with data.",
+    "image": "images/sales-dashboard.jpg",
+    "link": "#"
+  },
+  {
+    "title": "Customer Churn Analysis",
+    "problem": "Predict which customers are likely to leave using sample data.",
+    "tools": "Excel, Power BI, Python (pandas)",
+    "learnings": "Data cleaning, basic analytics, visualization, business insight.",
+    "image": "images/churn-analysis.jpg",
+    "link": "#"
+  },
+  {
+    "title": "Survey Data Visualization",
+    "problem": "Present survey results in a clear, interactive format.",
+    "tools": "Power BI, Excel",
+    "learnings": "Data import, chart selection, user-friendly reporting.",
+    "image": "images/survey-viz.jpg",
+    "link": "#"
+  }
+]

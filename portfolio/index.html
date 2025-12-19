@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <nav class="navbar">
+      <div class="navbar__brand">Portfolio</div>
+      <ul class="navbar__links" id="navbarLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navbarToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navbarLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Building Modern Data Experiences</h1>
+        <p class="hero__desc">Turning data into insights with a passion for analytics, design, and real-world impact. Welcome to a portfolio crafted for the future.</p>
+        <div class="hero__actions">
+          <a href="projects.html" class="btn btn--accent">View Projects</a>
+          <a href="contact.html" class="btn">Contact</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="abstract-shapes">
+          <div class="shape shape--blue"></div>
+          <div class="shape shape--cyan"></div>
+          <div class="shape shape--panel"></div>
+          <div class="shape shape--dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section class="section whatido">
+      <h2 class="section__title">What I Do</h2>
+      <div class="whatido__cards">
+        <div class="whatido__card">
+          <div class="whatido__icon">📊</div>
+          <div class="whatido__text">Data Analytics<br><span>Insightful dashboards &amp; reports</span></div>
+        </div>
+        <div class="whatido__card">
+          <div class="whatido__icon">💡</div>
+          <div class="whatido__text">Problem Solving<br><span>Turning data into action</span></div>
+        </div>
+        <div class="whatido__card">
+          <div class="whatido__icon">🎨</div>
+          <div class="whatido__text">Design Thinking<br><span>Modern, user-focused visuals</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools & Skills Section -->
+    <section class="section tools">
+      <h2 class="section__title">Tools &amp; Skills</h2>
+      <div class="tools__chips">
+        <span class="chip">Power BI</span>
+        <span class="chip">Excel</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Python</span>
+        <span class="chip">Data Viz</span>
+        <span class="chip">Analytics</span>
+        <span class="chip">UI/UX</span>
+        <span class="chip">Problem Solving</span>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section featured-projects">
+      <h2 class="section__title">Featured Projects</h2>
+      <div class="projects__grid">
+        <div class="projects__card">
+          <div class="projects__card-img" style="background:#232b3a;height:120px;border-radius:8px 8px 0 0;"></div>
+          <div class="projects__card-title">Project One</div>
+          <div class="projects__card-label">Analytics</div>
+          <div class="projects__card-tools">Power BI, Excel</div>
+          <div class="projects__card-learnings">Modern dashboard design</div>
+        </div>
+        <div class="projects__card">
+          <div class="projects__card-img" style="background:#1b263b;height:120px;border-radius:8px 8px 0 0;"></div>
+          <div class="projects__card-title">Project Two</div>
+          <div class="projects__card-label">Web</div>
+          <div class="projects__card-tools">HTML, CSS, JS</div>
+          <div class="projects__card-learnings">Responsive UI/UX</div>
+        </div>
+        <div class="projects__card">
+          <div class="projects__card-img" style="background:#22223b;height:120px;border-radius:8px 8px 0 0;"></div>
+          <div class="projects__card-title">Project Three</div>
+          <div class="projects__card-label">App</div>
+          <div class="projects__card-tools">Python, SQL</div>
+          <div class="projects__card-learnings">Data-driven logic</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section cta">
+      <div class="cta__content">
+        <h2>Ready to collaborate or connect?</h2>
+        <a href="contact.html" class="btn btn--accent">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

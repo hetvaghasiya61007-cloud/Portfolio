@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Portfolio</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__brand">Portfolio</div>
+    <ul class="navbar__links" id="navbarLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="navbar__toggle" id="navbarToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navbarLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <main class="projects">
+    <h1 class="page-title">Practice Projects</h1>
+    <div class="projects__grid">
+      <div class="projects__card">
+        <div class="projects__card-img" style="background:#232b3a;height:140px;"></div>
+        <div class="projects__card-title">Analytics Dashboard</div>
+        <div class="projects__card-label">Analytics</div>
+        <div class="projects__card-tools">Power BI, Excel</div>
+        <div class="projects__card-learnings">Modern dashboard design</div>
+        <div class="projects__card-tags"><span class="tag">Analytics</span><span class="tag">Dashboard</span></div>
+      </div>
+      <div class="projects__card">
+        <div class="projects__card-img" style="background:#1b263b;height:140px;"></div>
+        <div class="projects__card-title">Responsive Web App</div>
+        <div class="projects__card-label">Web</div>
+        <div class="projects__card-tools">HTML, CSS, JS</div>
+        <div class="projects__card-learnings">Responsive UI/UX</div>
+        <div class="projects__card-tags"><span class="tag">Web</span><span class="tag">UI/UX</span></div>
+      </div>
+      <div class="projects__card">
+        <div class="projects__card-img" style="background:#22223b;height:140px;"></div>
+        <div class="projects__card-title">Data App</div>
+        <div class="projects__card-label">App</div>
+        <div class="projects__card-tools">Python, SQL</div>
+        <div class="projects__card-learnings">Data-driven logic</div>
+        <div class="projects__card-tags"><span class="tag">App</span><span class="tag">Data</span></div>
+      </div>
+      <div class="projects__card">
+        <div class="projects__card-img" style="background:#2d3142;height:140px;"></div>
+        <div class="projects__card-title">Placeholder Project</div>
+        <div class="projects__card-label">Other</div>
+        <div class="projects__card-tools">Tool, Tech</div>
+        <div class="projects__card-learnings">Premium card UI</div>
+        <div class="projects__card-tags"><span class="tag">Other</span></div>
+      </div>
+    </div>
+  </main>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
